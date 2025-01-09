@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.res-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Aligns cards from the start */
+    gap: 24px; /* Controls the spacing between rows and columns */
+   
+}
+
+
+.shimmer {
+    @apply w-[290px] h-[300px] bg-gray-100 rounded-lg animate-pulse;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .shimmer::before {
+    content: '';
+    @apply absolute top-0 left-0 h-full w-full;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0.4) 30%,
+      rgba(255, 255, 255, 0) 50%
+    );
+    transform: translateX(-100%);
+    animation: shimmer-move 1.5s infinite;
+  }
+  
+  /* Keyframes for shimmer animation */
+  @keyframes shimmer-move {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(-10%);
+    }
+    50% {
+      transform: translateY(0);
+    }
+  }
+  
