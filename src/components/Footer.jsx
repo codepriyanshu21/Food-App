@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <section className="relative bg-black text-center text-white p-4">
-      <span className="font-bold">Created By Priyanshu © 2024 Foodie Heaven. All rights reserved.</span>
+      <span className="font-bold">Created By Priyanshu © 2024 Foodie Haven. All rights reserved.</span>
       <div className="flex justify-center">
         <Link to={"https://github.com/codepriyanshu21"} target="_blank">
           <span className="w-12 h-12 text-xl"><SiGithub/></span>
