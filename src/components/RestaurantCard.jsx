@@ -13,7 +13,7 @@ const RestaurantCard = ({ restaurant }) => {
     } = restaurant.info;
 
     return (
-        <div className="w-[270px] h-[300px] bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-xl transition-transform duration-300 hover:scale-105 cursor-pointer">
+        <div className="w-[280px] h-[300px] bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-2xl transition-transform duration-300 hover:scale-105 cursor-pointer">
         {/* Image */}
         <img
           className="w-full h-[170px] object-cover rounded-t-lg loading-lazy"

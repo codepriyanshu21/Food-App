@@ -103,12 +103,12 @@ const Body = () => {
       <div>
         <HeroSection scrollToRestaurants={scrollToRestaurants} />
       </div>
-      <div className="max-w-6xl mx-auto mt-20 p-4">
+      <div className="max-w-7xl mx-auto mt-20 p-4">
         <div className="w-full h-[1px] bg-black my-4"></div>
         <div className="text-3xl text-black font-bold">What's on your mind</div>
         <div>
           {/* Search and Sort Section */}
-          <div className="mt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="mt-8 flex  md:flex-row items-center justify-between gap-14">
             {/* Search Bar */}
             <div className="flex items-center w-full md:w-auto">
               <input
