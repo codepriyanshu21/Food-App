@@ -22,7 +22,11 @@ const Body = () => {
 
   const fetchedData = async () => {
     try {
-      const data = await fetch(RESTAURANTS_LIST);
+      const data = await fetch(RESTAURANTS_LIST,{
+        headers:{
+          'x-cors-api-key':'temp_4e47944241be61658064b64717ccfed0'
+        }
+      });
       const json = await data.json();
 
       const allRestaurants = [];
@@ -44,6 +48,7 @@ const Body = () => {
       });
 
       setRestaurants(uniqueRestaurants);
+      console.log(uniqueRestaurants)
       setFilterRestaurant(uniqueRestaurants); // Set initial filtered data to the full list
     } catch (err) {
       console.error("Error fetching data:", err);
